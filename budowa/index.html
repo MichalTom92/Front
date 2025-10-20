@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BudujemyPro - Profesjonalne Usługi Budowlane</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body data-theme="light">
+    <header class="glass">
+        <div class="container">
+            <div class="logo">
+                <span>🏗️</span>
+                <span>TwojaNazwa</span>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+                <span class="hamburger-icon"></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Strona Główna</a></li>
+                <li><a href="#features">Usługi</a></li>
+                <li><a href="#gallery">Galeria</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+                <li><button class="theme-toggle" aria-label="Toggle theme">🌓</button></li>
+            </ul>
+        </div>
+    </header>
+<main>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Budujemy Twoje Marzenia</h1>
+            <p>Profesjonalne usługi budowlane z pasją i doświadczeniem. Od fundamentów po dach - realizujemy projekty na najwyższym poziomie.</p>
+            <a href="#contact" class="cta-button">Uzyskaj Wstępną Wycenę</a>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Nasze Usługi</h2>
+            <div class="features-grid">
+                <div class="feature-card glass">
+                    <div class="feature-icon">🏠</div>
+                    <h3>Budownictwo Mieszkaniowe</h3>
+                    <p>Kompleksowa budowa domów jednorodzinnych i wielorodzinnych według indywidualnych projektów.</p>
+                </div>
+                <div class="feature-card glass">
+                    <div class="feature-icon">🔨</div>
+                    <h3>Remonty i Wykończenia</h3>
+                    <p>Profesjonalne wykończenia wnętrz, remonty kapitalne i częściowe. Dbałość o każdy detal.</p>
+                </div>
+                <div class="feature-card glass">
+                    <div class="feature-icon">🏗️</div>
+                    <h3>Obiekty Komercyjne</h3>
+                    <p>Realizacja projektów budowlanych dla firm - biura, hale magazynowe, centra handlowe.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title">Nasze Realizacje</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-title="Nowoczesny dom jednorodzinny">
+                    <img src="https://images.pexels.com/photos/1115804/pexels-photo-1115804.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Nowoczesny dom jednorodzinny z dużymi oknami">
+                    <div class="gallery-text">Dom Jednorodzinny</div>
+                </div>
+                <div class="gallery-item" data-title="Wykończenie nowoczesnego biura">
+                    <img src="https://images.pexels.com/photos/260689/pexels-photo-260689.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Wykończenie nowoczesnego biura">
+                    <div class="gallery-text">Remont Biura</div>
+                </div>
+                <div class="gallery-item" data-title="Budowa hali magazynowej">
+                    <img src="https://images.pexels.com/photos/3816807/pexels-photo-3816807.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Wnętrze dużej hali magazynowej w budowie">
+                    <div class="gallery-text">Hala Magazynowa</div>
+                </div>
+                <div class="gallery-item" data-title="Nowy apartamentowiec w mieście">
+                    <img src="https://images.pexels.com/photos/209315/pexels-photo-209315.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Nowy apartamentowiec w mieście">
+                    <div class="gallery-text">Apartamentowiec</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Skontaktuj Się z Nami</h2>
+            <div class="contact-content">
+                <form class="contact-form glass">
+                    <div class="form-group">
+                        <label for="name">Imię i Nazwisko</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Telefon</label>
+                        <input type="tel" id="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Wiadomość</label>
+                        <textarea id="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Wyślij Wiadomość</button>
+                </form>
+                <div class="contact-info">
+                    <div class="contact-info-item">📞 +48 123 456 789</div>
+                    <div class="contact-info-item">✉️ kontakt@budujemypro.pl</div>
+                    <div class="contact-info-item">📍 ul. Budowlana 15, 00-001 Warszawa</div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+    <footer>
+        <p>&copy; 2024 BudujemyPro. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+
+</body>
+</html>
