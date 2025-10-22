@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- SEO: Ustawienie domyślnego języka na angielski dla rynku UK -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional construction services in the UK. We specialize in residential building, renovations, and commercial projects. Quality, reliability, and customer satisfaction.">
+    <meta name="keywords" content="construction UK, builder, residential construction, renovation, commercial building, house extension, loft conversion">
+    <title data-key="siteTitle">ProBuild UK - Professional Construction Services</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body data-theme="light">
+    <header class="glass">
+        <div class="container">
+            <a href="#home" class="logo">
+                <span>🏗️</span>
+                <span data-key="companyName">TwojaNazwa</span>
+            </a>
+            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+                <span class="hamburger-icon"></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" data-key="navHome">Strona Główna</a></li>
+                <li><a href="#features" data-key="navServices">Usługi</a></li>
+                <li><a href="#gallery" data-key="navGallery">Galeria</a></li>
+                <li><a href="#contact" data-key="navContact">Kontakt</a></li>
+                <li><button class="theme-toggle" aria-label="Toggle theme">🌓</button></li>
+                <li><div class="lang-switcher">
+                    <button class="lang-btn" data-lang="pl"><img src="pl.svg" alt="Polska flaga"></button>
+                    <button class="lang-btn" data-lang="en"><img src="gb.svg" alt="Flaga Wielkiej Brytanii"></button>
+                </div></li>
+            </ul>
+        </div>
+    </header>
+<main>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 data-key="heroTitle">Budujemy Twoje Marzenia</h1>
+            <p data-key="heroSubtitle">Profesjonalne usługi budowlane z pasją i doświadczeniem. Od fundamentów po dach - realizujemy projekty na najwyższym poziomie.</p>
+            <a href="#contact" class="cta-button" data-key="heroCta">Uzyskaj Wstępną Wycenę</a>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title" data-key="servicesTitle">Nasze Usługi</h2>
+            <div class="features-grid">
+                <div class="feature-card glass">
+                    <div class="feature-icon">🏠</div>
+                    <h3 data-key="service1Title">Budownictwo Mieszkaniowe</h3>
+                    <p data-key="service1Desc">Kompleksowa budowa domów jednorodzinnych i wielorodzinnych według indywidualnych projektów.</p>
+                </div>
+                <div class="feature-card glass">
+                    <div class="feature-icon">🔨</div>
+                    <h3 data-key="service2Title">Remonty i Wykończenia</h3>
+                    <p data-key="service2Desc">Profesjonalne wykończenia wnętrz, remonty kapitalne i częściowe. Dbałość o każdy detal.</p>
+                </div>
+                <div class="feature-card glass">
+                    <div class="feature-icon">🏗️</div>
+                    <h3 data-key="service3Title">Obiekty Komercyjne</h3>
+                    <p data-key="service3Desc">Realizacja projektów budowlanych dla firm - biura, hale magazynowe, centra handlowe.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title" data-key="galleryTitle">Nasze Realizacje</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-title="Nowoczesny dom jednorodzinny">
+                    <img src="https://images.pexels.com/photos/1115804/pexels-photo-1115804.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Nowoczesny dom jednorodzinny z dużymi oknami" loading="lazy">
+                    <div class="gallery-text" data-key="gallery1">Dom Jednorodzinny</div>
+                </div>
+                <div class="gallery-item" data-title="Wykończenie nowoczesnego biura">
+                    <img src="https://images.pexels.com/photos/260689/pexels-photo-260689.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Wykończenie nowoczesnego biura" loading="lazy">
+                    <div class="gallery-text" data-key="gallery2">Remont Biura</div>
+                </div>
+                <div class="gallery-item" data-title="Budowa hali magazynowej">
+                    <img src="https://images.pexels.com/photos/3816807/pexels-photo-3816807.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Wnętrze dużej hali magazynowej w budowie" loading="lazy">
+                    <div class="gallery-text" data-key="gallery3">Hala Magazynowa</div>
+                </div>
+                <div class="gallery-item" data-title="Nowy apartamentowiec w mieście">
+                    <img src="https://images.pexels.com/photos/209315/pexels-photo-209315.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Nowy apartamentowiec w mieście" loading="lazy">
+                    <div class="gallery-text" data-key="gallery4">Apartamentowiec</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-key="contactTitle">Skontaktuj Się z Nami</h2>
+            <div class="contact-content">
+                <form id="contact-form" class="contact-form glass" action="https://api.web3forms.com/submit" method="POST">
+                    <!-- Klucz dostępowy do Web3Forms. Zostanie wysłany na Twój email po pierwszym użyciu. -->
+                    <input type="hidden" name="subject" value="New Message from a Customer via Website">
+                    <input type="hidden" name="from_name" value="Formularz Kontaktowy">
+
+                    <div class="form-group">
+                        <label for="name" data-key="formName">Imię i Nazwisko</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" data-key="formEmail">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone" data-key="formPhone">Telefon</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="message" data-key="formMessage">Wiadomość</label>
+                        <textarea id="message" name="message"></textarea>
+                    </div>
+                    <button type="submit" class="submit-button" data-key="formSubmit">Wyślij Wiadomość</button>
+                </form>
+                <div id="form-status"></div> <!-- Miejsce na komunikat o statusie wysyłki -->
+                <div class="contact-info">
+                    <div class="contact-info-item">📞 +48 123 456 789</div>
+                    <div class="contact-info-item">✉️ kontakt@budujemypro.pl</div>
+                    <div class="contact-info-item" data-key="contactAddress">📍 ul. Budowlana 15, 00-001 Warszawa</div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+    <footer>
+        <p data-key="footerRights">© 2025 Wszelkie prawa zastrzeżone.</p>
+    </footer>
+
+    <!-- Lightbox Structure -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <a class="lightbox-prev">&#10094;</a>
+        <a class="lightbox-next">&#10095;</a>
+        <img class="lightbox-content" id="lightbox-img">
+        <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <a href="#home" class="scroll-to-top" aria-label="Scroll to top">↑</a>
+</body>
+</html>
